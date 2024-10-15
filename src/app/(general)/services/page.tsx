@@ -1,16 +1,10 @@
-import {
-  // BarChart,
-  // Lightbulb,
-  // MessageSquare,
-  // Monitor,
-  // PieChart,
-  // Settings,
-} from "lucide-react";
+
 import Image from "next/image";
 
 export const metadata = {
   title: "BiAnalytics | Servicios",
-  description: "Conoce los servicios de BI Analytics y cómo podemos ayudarte a mejorar tu rendimiento empresarial.",
+  description:
+    "Conoce los servicios de BI Analytics y cómo podemos ayudarte a mejorar tu rendimiento empresarial.",
 };
 
 export default function ServicesPage() {
@@ -30,80 +24,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-
       <section className=" py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
             Nuestros Servicios de Análisis de Datos
           </h2>
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Monitor size={30} />,
-                title: "Análisis de Datos",
-                description:
-                  "Aenaen massa. Cum sociis natoque penatibus montes nascetur ridiculus mus.",
-              },
-              {
-                icon: <MessageSquare size={30} />,
-                title: "Análisis de Datos",
-                description:
-                  "Aenaen massa. Cum sociis natoque penatibus montes nascetur ridiculus mus.",
-              },
-              {
-                icon: <PieChart size={30} />,
-                title: "Análisis de Datos",
-                description:
-                  "Aenaen massa. Cum sociis natoque penatibus montes nascetur ridiculus mus.",
-              },
-              {
-                icon: <Settings size={30} />,
-                title: "Análisis de Datos",
-                description:
-                  "Aenaen massa. Cum sociis natoque penatibus montes nascetur ridiculus mus.",
-              },
-              {
-                icon: <Lightbulb size={30} />,
-                title: "Análisis de Datos",
-                description:
-                  "Aenaen massa. Cum sociis natoque penatibus montes nascetur ridiculus mus.",
-              },
-              {
-                icon: <BarChart size={30} />,
-                title: "Análisis de Datos",
-                description:
-                  "Aenaen massa. Cum sociis natoque penatibus montes nascetur ridiculus mus.",
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
-              >
-                <div className="text-blue-600 mb-4">{service.icon}</div>
-                <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600 text-sm">{service.description}</p>
-              </div>
-            ))}
-          </div> */}
         </div>
       </section>
-
-      {/* <section className="container mx-auto px-4 py-8">
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-          <div
-            className="relative"
-            style={{ paddingBottom: "56.25%", height: 0 }}
-          >
-            <iframe
-              title="ModeloPrueba"
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://app.powerbi.com/view?r=eyJrIjoiNDFlODMxZGEtYjgxNy00ZDdhLTkxNDctZTllZjM3ODhlN2NhIiwidCI6ImU3MWE2ZDNkLWMwMTItNDljOS04Y2YyLTQxYjgzNDU0MDdkMyIsImMiOjR9"
-              frameBorder="0"
-              allowFullScreen={true}
-            ></iframe>
-          </div>
-        </div>
-      </section> */}
 
       <section className="container mx-auto px-4 py-8">
         {/* Primera fila: Imagen a la izquierda, texto a la derecha */}
