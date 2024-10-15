@@ -3,23 +3,23 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
   const { name, email, subject, phone, message } = await req.json();
-  console.log('Datos recibidos:', { name, email, subject, phone, message });
+
 
   // Configura el transportador de Nodemailer
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST, // Servidor SMTP
     port: parseInt(process.env.SMTP_PORT ?? '587', 10), // Puerto SMTP
-    secure: process.env.SMTP_SECURE === 'true', // true para 465, false para otros puertos
+    secure: process.env.SMTP_SECURE === 'true',
     auth: {
-      user: process.env.SMTP_USER, // Tu correo electrónico
-      pass: process.env.SMTP_PASS, // Tu contraseña de correo electrónico
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
   });
 
   // Configura el correo electrónico
   const mailOptions = {
     from: email,
-    to: process.env.SMTP_USER, // Tu correo electrónico
+    to: process.env.SMTP_USER,
     subject: `Nuevo mensaje de contacto: ${subject}`,
     text: `
       Nombre: ${name}
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('Correo enviado con éxito');
+
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {
     console.error('Error al enviar el correo:', error);

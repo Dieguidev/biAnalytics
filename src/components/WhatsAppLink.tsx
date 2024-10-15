@@ -3,8 +3,8 @@ import React from 'react'
 import { FaWhatsapp } from 'react-icons/fa';
 
 interface WhatsAppIconProps {
-  phoneNumber: string; // Número de teléfono con el código de país
-  message?: string;    // Mensaje opcional que se enviará por defecto
+  phoneNumber: string;
+  message?: string;
 }
 
 export const WhatsAppIcon: React.FC<WhatsAppIconProps> = ({ phoneNumber, message = '' }) => {

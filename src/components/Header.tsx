@@ -20,7 +20,7 @@ export const Header = () => {
                 width={50}
                 height={50}
               />
-              <span className="ml-2 text-xl font-bold">BI Analytics</span>
+              <span className="ml-2 text-3xl font-bold">BI Analytics</span>
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">

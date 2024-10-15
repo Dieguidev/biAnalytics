@@ -31,7 +31,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-fixed bg-cover bg-center h-full min-h-screen`}
-        style={{ backgroundImage: "url('/fondo.jpg')" }}
+        style={{ backgroundImage: "url('/fondo6.webp')" }}
       >
         {children}
       </body>
