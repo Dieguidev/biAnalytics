@@ -33,7 +33,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold mb-4 uppercase">Contáctanos</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">ADDRESS</h3>
+                <h3 className="text-xl font-semibold mb-2">UBICACIÓN</h3>
                 <div className="flex items-center">
                   <MapPin className="mr-2" size={20} />
                   <Link
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">PHONE</h3>
+                <h3 className="text-xl font-semibold mb-2">TELÉFONO</h3>
                 <div className="flex items-center">
                   {/* Mostrar solo en dispositivos móviles */}
                   <Link href="tel:+51 942 986 742" className="block md:hidden">
